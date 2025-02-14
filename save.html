@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Книга Памяти</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<style>
+body {
+  font-family: sans-serif;
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('image/zxc.png') no-repeat center center/cover;
+  transition: background-color 0.5s ease; /* Добавлено для плавного изменения фона при загрузке */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 2px solid #ddd;
+  padding: 10px;
+  max-width: 80vw;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  opacity: 0; /* Начальная непрозрачность */
+  transform: translateY(20px); /* Начальное смещение */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Добавлено для плавного появления */
+}
+
+.container.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.top-section {
+  display: flex;
+  width: 100%;
+}
+
+.image-container {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.text-container {
+  flex: 2;
+  padding: 10px;
+}
+
+.map-container {
+  width: 100%;
+  height: 300px;
+  border-top: 2px solid #ddd;
+  margin-top: 10px;
+  opacity: 0; /* Начальная непрозрачность карты */
+  transition: opacity 0.5s ease; /* Добавлено для плавного появления карты */
+}
+
+.map-container.show {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .top-section {
+    flex-direction: column;
+  }
+  .map-container {
+    height: 200px;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="top-section">
+    <div class="image-container">
+      <img class="image" src="image/FRONT.png" alt="Изображение">
+    </div>
+    <div class="text-container">
+      <h2>Информация</h2>
+      <p><strong>Наименование района:</strong> Тюльганский район</p>
+      <p><strong>ФИО:</strong> Прохоренко Александр Александрович</p>
+      <p><strong>Годы жизни:</strong> 22.06.1990 - 16.03.2016</p>
+      <p><strong>Краткая информация:</strong> Выполнение специальных задач на территории Сирийской Арабской Республики. Родился в с. Городки Тюльганского района. Учился с 1997 по 2007гг в Городецкой СОШ. В 2012 окончил с отличием Военную академию войсковой противо воздушной обороны Вооруженных Сил РФ. Распределен на должность передового авиационного наводчика в группу сил специальных операций РФ. В январе 2016г убыл в Сирию, выполнял задачу по наведению авиаударов на важнейшие объекты террористических организаций сирийского государства. 16 марта 2016 года Прохоренко А.А., находившийся неделю в тылу противника, был окружён боевиками «Исламского государства» в районе населённого пункта Тадмор (провинция Хомс, Сирия). Старший лейтенант вступил в бой с террористами и, не желая сдаваться в плен, вызвал огонь на себя. Вместе с геройски погибшим Прохоренко были уничтожены и окружившие его боевики «Исламского государства». Похоронен на сельском кладбище, село Городки, Тюльганский район, Оренбургская область.</p>
+      <p><strong>Место службы:</strong> Выполнение специальных задач на территории Сирийской Арабской Республики</p>
+      <p><strong>Награды:</strong> Присвоено звание Героя России (посмертно)</p>
+    </div>
+  </div>
+  <div class="map-container" id="map"></div>
+</div>
+
+<script>
+  // Замените 'ВАШ_URL_NEXTGIS_TILE_LAYER' на ваш URL
+  var map = L.map('map').setView([51.505, -0.09], 13);
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+  }).addTo(map);
+
+  // Добавлено для отображения карты после загрузки
+  setTimeout(() => {
+    document.querySelector('.map-container').classList.add('show');
+  }, 500);
+
+  //Добавлена функция для плавного появления контейнера
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      document.querySelector('.container').classList.add('show');
+    }, 100); //Задержка в 100 миллисекунд
+  });
+</script>
+
+</body>
+</html>
+
