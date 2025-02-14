@@ -7,6 +7,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
 app.config['SECRET_KEY'] = 'secret_key'
 db = SQLAlchemy(app)
 
+
 class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(100), unique=True)
@@ -71,5 +72,33 @@ def logout():
     session.pop('user_id', None)
     return redirect(url_for('login'))
 
+@app.route('/map')
+def map():
+    if 'user_id' not in session:
+        return redirect(url_for('login'))
+    return render_template('map.html')
+
+@app.route('/faq')
+def faq():
+    if 'user_id' not in session:
+        return redirect(url_for('login'))
+    return render_template('faq.html')
+
+@app.route('/support', methods=['GET', 'POST'])
+def support():
+    if 'user_id' not in session:
+        return redirect(url_for('login'))
+    
+    if request.method == 'POST':
+        # Обработка формы поддержки
+        message = request.form['message']
+        # Здесь можно добавить логику отправки сообщения
+        return redirect(url_for('dashboard'))
+    
+    return render_template('support.html')
+
+
+
+
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=3000)
