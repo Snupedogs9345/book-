@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Книга Памяти</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<style>
+body {
+  font-family: sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+  background: url('image/zxc.png') no-repeat center center/cover;
+  transition: background-color 0.5s ease;
+}
+
+.section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.container {
+  width: 90vw;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+}
+
+.top-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  width: 100%;
+}
+
+.image-container {
+  position: relative;
+  width: 450px;
+  height: 550px;
+  flex-shrink: 0;
+}
+
+.image-container img:first-child {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 30%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  /* /* height: 250px;
+  border-radius: 50%;
+  object-fit: cover; */
+  border: 6px solid white; 
+}
+
+.text-container {
+  flex-grow: 1;
+}
+
+p {
+  word-break: break-word;
+}
+
+.map-section {
+  width: 90vw;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.map-container {
+  width: 100%;
+  height: 80vh;
+  border-radius: 16px;
+  overflow: hidden;
+}
+</style>
+</head>
+<body>
+
+<div class="section">
+  <div class="container">
+    <div class="top-section">
+      <div class="image-container">
+        <img src="image/FRONT.png" alt="Фон фото">
+        <img class="image-overlay" src="image\3f1a49f1-d713-4b05-877a-59b7a86194f4.png" alt="Фото человека">
+      </div>
+      <div class="text-container">
+        <h2><p>Прохоренко Александр Александрович</p></h2>
+        <p><strong>Наименование района:</strong> Тюльганский район</p>
+        <p><strong>Годы жизни:</strong> 22.06.1990 - 16.03.2016</p>
+        <p><strong>Краткая информация:</strong> Выполнение специальных задач на территории Сирийской Арабской Республики. Родился в с. Городки Тюльганского района. Учился с 1997 по 2007гг в Городецкой СОШ. В 2012 окончил с отличием Военную академию войсковой противо воздушной обороны Вооруженных Сил РФ. Распределен на должность передового авиационного наводчика в группу сил специальных операций РФ. В январе 2016г убыл в Сирию, выполнял задачу по наведению авиаударов на важнейшие объекты террористических организаций сирийского государства. 16 марта 2016 года Прохоренко А.А., находившийся неделю в тылу противника, был окружён боевиками «Исламского государства» в районе населённого пункта Тадмор (провинция Хомс, Сирия). Старший лейтенант вступил в бой с террористами и, не желая сдаваться в плен, вызвал огонь на себя. Вместе с геройски погибшим Прохоренко были уничтожены и окружившие его боевики «Исламского государства». Похоронен на сельском кладбище, село Городки, Тюльганский район, Оренбургская область.</p>
+        <p><strong>Место службы:</strong> Выполнение специальных задач на территории Сирийской Арабской Республики</p>
+        <p><strong>Награды:</strong> Присвоено звание Героя России (посмертно)</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section map-section">
+  <div class="map-container" id="map"></div>
+</div>
+
+<script>
+  function handleScroll() {
+    document.querySelectorAll('.section').forEach(section => {
+      const rect = section.getBoundingClientRect();
+      if (rect.top < window.innerHeight * 0.8 && rect.bottom > window.innerHeight * 0.2) {
+        section.classList.add('show');
+      } else {
+        section.classList.remove('show');
+      }
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', handleScroll);
+  window.addEventListener('scroll', handleScroll);
+
+  var map = L.map('map').setView([51.505, -0.09], 13);
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+  }).addTo(map);
+</script>
+
+</body>
+</html>
