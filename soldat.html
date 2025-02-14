@@ -5,14 +5,15 @@
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <style>
+/* зданий фон */
 body {
   font-family: sans-serif;
   margin: 0;
   overflow-x: hidden;
-  background: url('image/zxc.png') no-repeat center center/cover;
+  background: url('image/FRONT.png') no-repeat center center/cover;
   transition: background-color 0.5s ease;
 }
-
+/*  */
 .section {
   height: 100vh;
   display: flex;
@@ -31,7 +32,7 @@ body {
 
 .container {
   width: 90vw;
-  background-color: rgba(255, 255, 255, 0.95);
+  background: url('image/zxc.png') no-repeat center center/cover;
   padding: 30px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   border-radius: 16px;
@@ -53,22 +54,21 @@ body {
 }
 
 .image-container img:first-child {
-  width: 100%;
-  height: 100%;
+  width: 70%;
+  height: 80%;
   object-fit: cover;
   border-radius: 16px;
 }
-
+/* измениние картинки Героя */
 .image-overlay {
   position: absolute;
-  top: 30%;
-  left: 35%;
+  top: 50%;
+  left: 55%;
   transform: translate(-50%, -50%);
-  width: 200px;
-  /* /* height: 250px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
-  object-fit: cover; */
-  border: 6px solid white; 
+  object-fit: cover; 
 }
 
 .text-container {
@@ -94,16 +94,105 @@ p {
   border-radius: 16px;
   overflow: hidden;
 }
+
+
+
+/* ПОДВАЛ */
+.footer {
+    background-color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 50px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-links a {
+  color: grey;
+  text-decoration: none;
+}
+
+
+
 </style>
 </head>
+
+
+<header>
+    <style>
+    * {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.white-text{
+    color: white;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #2b2a2a;
+  padding: 20px 10px;
+}
+
+.wrap-logo {
+  display: flex;
+  align-items: center;
+ 
+}
+
+header a {
+  color: #ffffff;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  border-radius: 4px;
+}
+
+header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+header a:hover {
+  background-color: #FBC02D;
+  color: #212121;
+}
+
+
+
+nav {
+  display: flex;
+  align-items: center;
+  }
+    </style>
+
+    <div class="wrap-logo">
+    <a href="#logo" class="logo">Логотип сайта</a>
+    </div>
+    <nav>
+      <a class="active" href="#home">Главная</a>
+      <a href="#contact">Контакты</a>
+      <a href="#about">О нас</a>
+    </nav>
+</header>
+
+
 <body>
 
 <div class="section">
   <div class="container">
     <div class="top-section">
       <div class="image-container">
-        <img src="image/FRONT.png" alt="Фон фото">
-        <img class="image-overlay" src="image\3f1a49f1-d713-4b05-877a-59b7a86194f4.png" alt="Фото человека">
+        <img class="image-overlay" src="image/3f1a49f1-d713-4b05-877a-59b7a86194f4.png" alt="Фото человека">
       </div>
       <div class="text-container">
         <h2><p>Прохоренко Александр Александрович</p></h2>
@@ -121,6 +210,143 @@ p {
   <div class="map-container" id="map"></div>
 </div>
 
+
+<footer class="footer">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container_footer{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+    justify-content: flex-end;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+
+
+
+    </style>
+    <div class="container_footer">
+        <div class="row">
+            <div class="footer-col">
+                <h4>company</h4>
+                <ul>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">our services</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">affiliate program</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>get help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">shipping</a></li>
+                    <li><a href="#">returns</a></li>
+                    <li><a href="#">order status</a></li>
+                    <li><a href="#">payment options</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>online shop</h4>
+                <ul>
+                    <li><a href="#">watch</a></li>
+                    <li><a href="#">bag</a></li>
+                    <li><a href="#">shoes</a></li>
+                    <li><a href="#">dress</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
 <script>
   function handleScroll() {
     document.querySelectorAll('.section').forEach(section => {
@@ -137,8 +363,8 @@ p {
   window.addEventListener('scroll', handleScroll);
 
   var map = L.map('map').setView([51.505, -0.09], 13);
-  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+  L.tileLayer('https://maps.nextgis.com/api/v1/tiles/{z}/{x}/{y}.png?key=YOUR_NEXTGIS_API_KEY', {
+    attribution: '&copy; <a href="https://nextgis.com">NextGIS</a>'
   }).addTo(map);
 </script>
 
