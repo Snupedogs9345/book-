@@ -1,0 +1,44 @@
+{% extends "admin/base.html" %}
+
+{% block content %}
+<h2>Список конфликтов</h2>
+<a href="{{ url_for('add_conflict') }}" class="btn btn-primary mb-3">Добавить новый</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Название</th>
+            <th>Описание</th>
+            <th>Статус</th>
+            <th>Дата создания</th>
+            <th>Действия</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for conflict in conflicts %}
+        <tr>
+            <td>{{ conflict.id }}</td>
+            <td>{{ conflict.title }}</td>
+            <td class="text-truncate" style="max-width: 300px;">{{ conflict.description }}</td>
+            <td>
+                <span class="badge bg-{{ 'success' if conflict.status == 'closed' else 'warning' }} text-white">
+                    {{ 'Закрыт' if conflict.status == 'closed' else 'Открыт' }}
+                </span>
+            </td>
+            <td>{{ conflict.created_at.strftime('%d.%m.%Y %H:%M') }}</td>
+            <td>
+                <a href="{{ url_for('edit_conflict', id=conflict.id) }}" class="btn btn-sm btn-warning">Редактировать</a>
+                <form action="{{ url_for('delete_conflict', id=conflict.id) }}" method="POST" style="display: inline;">
+                    <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Вы уверены?')">Удалить</button>
+                </form>
+            </td>
+        </tr>
+        {% else %}
+        <tr>
+            <td colspan="6">Нет записей</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

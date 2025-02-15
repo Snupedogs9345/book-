@@ -1,0 +1,36 @@
+/* Кастомные стили */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.sidebar {
+    background-color: #2c3e50;
+    color: white;
+}
+
+.sidebar .nav-link {
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.sidebar .nav-link:hover {
+    background-color: #34495e;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.table {
+    background-color: white;
+}
+
+.btn-primary {
+    background-color: #2c3e50;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #34495e;
+}

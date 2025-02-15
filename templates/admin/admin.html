@@ -1,0 +1,54 @@
+{% extends "admin/base.html" %}
+{% block content %}
+<div class="container">
+    <h2 class="my-4">Управление администраторами</h2>
+    
+    <!-- Форма добавления администратора -->
+    <form method="POST" class="mb-4 p-4 bg-light border rounded">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <input type="text" class="form-control" name="full_name" placeholder="ФИО" required>
+            </div>
+            <div class="form-group col-md-6">
+                <input type="text" class="form-control" name="position" placeholder="Должность" required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <input type="text" class="form-control" name="phone" placeholder="Телефон" required>
+            </div>
+            <div class="form-group col-md-6">
+                <input type="text" class="form-control" name="login" placeholder="Логин" required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <input type="password" class="form-control" name="password" placeholder="Пароль" required>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Добавить</button>
+    </form>
+
+    <!-- Таблица администраторов -->
+    <table class="table table-bordered table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th>ФИО</th>
+                <th>Должность</th>
+                <th>Телефон</th>
+                <th>Логин</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for admin in admins %}
+            <tr>
+                <td>{{ admin.full_name }}</td>
+                <td>{{ admin.position }}</td>
+                <td>{{ admin.phone }}</td>
+                <td>{{ admin.username }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

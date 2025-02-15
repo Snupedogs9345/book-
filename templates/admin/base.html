@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Админ-панель</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Кастомные стили -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Боковая панель -->
+            <div class="col-md-3 bg-dark text-white min-vh-100 p-4">
+                <h1 class="fs-4 mb-4">Админ-панель</h1>
+                <nav class="nav flex-column">
+                    <a class="nav-link text-white mb-2" href="{{ url_for('admin_panel') }}">Главная</a>
+                    <a class="nav-link text-white mb-2" href="{{ url_for('manage_users') }}">Пользователи</a>
+                    <a class="nav-link text-white mb-2" href="{{ url_for('manage_admins') }}">Управление администраторами</a>
+                    <a class="nav-link text-white mb-2" href="{{ url_for('view_logs') }}">Логи</a>
+                    <a class="nav-link text-white mb-2" href="{{ url_for('format_control') }}">Контроль</a>
+                    <a class="nav-link text-white mb-2" href="{{ url_for('list_municipalities') }}">Список муниципалитетов</a>
+                    <a class="nav-link text-white mb-2" href="{{ url_for('list_participants') }}">Список участников</a>
+                    <a class="nav-link text-white mb-2" href="{{ url_for('list_conflicts') }}">Список конфликтов</a>
+                    <a class="nav-link text-white mb-2" href="{{ url_for('logout') }}">Выйти</a>
+                </nav>
+            </div>
+
+            <!-- Основной контент -->
+            <div class="col-md-9 p-4">
+                {% block content %}{% endblock %}
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

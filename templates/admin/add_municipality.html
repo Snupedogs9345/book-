@@ -1,0 +1,20 @@
+{% extends "admin/base.html" %}
+
+{% block content %}
+<h2>Добавить муниципалитет</h2>
+<form method="POST">
+    <div class="form-group">
+        <label for="name">Название:</label>
+        <input type="text" class="form-control" id="name" name="name" required>
+    </div>
+    
+    <div class="form-group">
+        <label for="geom">Геоданные:</label>
+        <textarea class="form-control" id="geom" name="geom" rows="3" required></textarea>
+        <small class="form-text text-muted">Введите геоданные в формате GeoJSON или WKT</small>
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Сохранить</button>
+    <a href="{{ url_for('list_municipalities') }}" class="btn btn-secondary">Отмена</a>
+</form>
+{% endblock %}

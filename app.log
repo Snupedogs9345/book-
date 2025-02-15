@@ -1,0 +1,1372 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 479-978-836
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 08:48:42] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 08:48:44] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 08:48:52] "[33mGET /base HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 08:49:00] "[33mGET /control HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 08:49:47] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 08:49:48] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 08:49:52] "[35m[1mGET /admin HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 08:49:52] "GET /admin?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 08:49:52] "GET /admin?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 08:49:52] "GET /admin?__debugger__=yes&cmd=resource&f=console.png&s=l7v3peB5UCY9ftyE3exv HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 08:49:52] "GET /admin?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 08:49:59] "[33mGET /admin/base HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 08:50:06] "[35m[1mGET /admin/users HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 08:50:06] "GET /admin/users?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 08:50:06] "GET /admin/users?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 08:50:06] "GET /admin/users?__debugger__=yes&cmd=resource&f=console.png&s=l7v3peB5UCY9ftyE3exv HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 08:50:06] "GET /admin/users?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'd:\\HACATON_ADMIN\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 479-978-836
+INFO:werkzeug: * Detected change in 'd:\\HACATON_ADMIN\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 479-978-836
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 08:54:13] "[33mGET /admin/login HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 08:54:33] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 08:54:40] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 08:54:46] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 08:54:52] "[33mGET /admin/login HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 08:54:57] "[32mGET /admin/logs HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 08:54:57] "GET /login?next=/admin/logs HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 08:55:10] "[33mGET /admin/base HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 08:55:18] "[32mGET /admin/control HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 08:55:18] "GET /login?next=/admin/control HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 08:59:07] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 08:59:39] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 08:59:40] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 08:59:40] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 08:59:41] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 08:59:41] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 08:59:41] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 08:59:41] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 08:59:41] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 08:59:41] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 08:59:42] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 08:59:42] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 08:59:42] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 08:59:42] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'd:\\HACATON_ADMIN\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 479-978-836
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 479-978-836
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:01:02] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:01:17] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:01:17] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:01:21] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:01:24] "GET /admin/logs HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:01:26] "GET /admin/control HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:01:29] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 479-978-836
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:03:24] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:03:24] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:03:28] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:03:28] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:03:32] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:03:32] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:03:33] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:03:33] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:03:35] "GET /admin/logs HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:03:35] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:03:36] "GET /admin/control HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:03:36] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:03:36] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:03:36] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:05:31] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:05:31] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:05:33] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:05:33] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:05:34] "GET /admin/logs HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:05:34] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:05:35] "GET /admin/control HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:05:35] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:05:38] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:05:38] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:05:39] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:05:39] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:05:40] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:05:40] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:05:41] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:05:41] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:05:41] "GET /admin/logs HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:05:41] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:05:51] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:05:51] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:24:05] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:24:05] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:24:07] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:24:07] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:24:08] "GET /admin/logs HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:24:09] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:24:22] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:24:22] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:24:23] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:24:23] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:25:19] "GET /admin/control HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:25:19] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:25:25] "POST /admin/control HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:25:27] "GET /admin/control HTTP/1.1" 200 -
+INFO:root:[2025-02-15 09:25:29.328381] Контроль данных: 1
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:25:29] "POST /admin/control HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:25:31] "GET /admin/control HTTP/1.1" 200 -
+INFO:root:[2025-02-15 09:25:32.965148] Контроль данных: 1221
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:25:32] "POST /admin/control HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:25:34] "GET /admin/control HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:25:35] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:25:35] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:25:37] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:25:37] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:25:47] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:25:47] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:25:48] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:25:48] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:25:48] "GET /admin/logs HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:25:49] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:25:50] "GET /admin/control HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:25:50] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:25:50] "GET /admin/logs HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:25:50] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:25:51] "GET /admin/control HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:25:51] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:25:52] "GET /admin/logs HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:25:52] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:28:40] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:28:40] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:28:40] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:28:40] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:28:41] "GET /admin/logs HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:28:41] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:28:42] "GET /admin/control HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:28:42] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:32:00] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:32:00] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in 'd:\\HACATON_ADMIN\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 479-978-836
+INFO:werkzeug: * Detected change in 'd:\\HACATON_ADMIN\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 479-978-836
+INFO:werkzeug: * Detected change in 'd:\\HACATON_ADMIN\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 479-978-836
+INFO:werkzeug: * Detected change in 'd:\\HACATON_ADMIN\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 479-978-836
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 479-978-836
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:35:29] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:35:29] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:35:32] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:35:32] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:35:33] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:35:33] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:35:33] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:35:33] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:35:39] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:35:39] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:35:39] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:35:40] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:36:03] "[32mPOST /admin/users HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:36:03] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:36:03] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:36:06] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:36:06] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:36:07] "GET /admin/control HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:36:07] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:36:08] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:36:08] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:36:08] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:36:17] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:36:17] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:36:17] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:36:19] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:36:19] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:36:22] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:36:22] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:36:23] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:36:23] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:36:35] "GET /admin/admins HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:36:35] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:39:49] "GET /admin/admins HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:39:50] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:39:50] "GET /admin/admins HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:39:50] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:39:52] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:39:52] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:39:52] "GET /admin/admins HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:39:52] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:39:53] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:39:53] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:39:54] "GET /admin/admins HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:39:54] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:39:54] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:39:55] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:42:39] "GET /admin/admins HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:42:39] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:42:50] "[32mPOST /admin/admins HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:42:50] "GET /admin/admins HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:42:50] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:42:54] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:42:54] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:42:56] "GET /admin/admins HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:42:56] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:42:57] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:42:57] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:42:57] "GET /admin/admins HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:42:57] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:43:09] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:43:09] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:43:10] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:43:14] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:43:16] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:43:18] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:43:20] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:43:31] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:43:31] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:43:31] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:43:33] "GET /admin/admins HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:43:33] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:43:40] "[35m[1mPOST /admin/admins HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:43:41] "GET /admin/admins?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:43:41] "GET /admin/admins?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:43:41] "GET /admin/admins?__debugger__=yes&cmd=resource&f=console.png&s=vypdt8ZoCt35RcKWVGp4 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:43:41] "GET /admin/admins?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:43:48] "GET /admin/admins HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:43:48] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:43:59] "[35m[1mPOST /admin/admins HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:43:59] "[36mGET /admin/admins?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:43:59] "[36mGET /admin/admins?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:43:59] "[36mGET /admin/admins?__debugger__=yes&cmd=resource&f=console.png&s=vypdt8ZoCt35RcKWVGp4 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:43:59] "[36mGET /admin/admins?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:44:23] "[32mPOST /admin/admins HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:44:23] "GET /admin/admins HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:44:23] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:44:28] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:44:28] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:44:28] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:44:31] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 479-978-836
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:46:35] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:46:35] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:46:46] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:46:46] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:46:46] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:46:50] "GET /admin/admins HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:46:50] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:47:12] "[32mPOST /admin/admins HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:47:12] "GET /admin/admins HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:47:12] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:47:17] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:47:17] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:47:17] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 09:47:23] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 10:40:13] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 10:40:14] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 10:40:14] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 10:40:25] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 10:40:25] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 10:40:25] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 10:40:28] "GET /admin/control HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 10:40:28] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 10:40:29] "GET /admin/logs HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 10:40:29] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 10:40:30] "GET /admin/admins HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 10:40:30] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 10:40:30] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 10:40:30] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 10:40:33] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 10:40:33] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 479-978-836
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 13:04:05] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 13:04:06] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in 'd:\\HACATON_ADMIN\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 479-978-836
+INFO:werkzeug: * Detected change in 'd:\\HACATON_ADMIN\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 479-978-836
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 13:25:49] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in 'd:\\HACATON_ADMIN\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 479-978-836
+INFO:werkzeug: * Detected change in 'd:\\HACATON_ADMIN\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 479-978-836
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 13:28:12] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 13:28:12] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 13:28:30] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 13:28:30] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 13:28:30] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 13:28:36] "GET /admin/admins HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 13:28:36] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 13:29:08] "[32mPOST /admin/admins HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 13:29:08] "GET /admin/admins HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 13:29:08] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 13:29:09] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 13:29:09] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 13:29:09] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 13:29:15] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 13:29:15] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 13:29:15] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 13:32:41] "GET /admin/admins HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 13:32:41] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 13:32:44] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 13:32:44] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 13:32:47] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 13:32:47] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 13:32:47] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 13:32:47] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 13:32:50] "GET /admin/admins HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 13:32:50] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 13:32:50] "GET /admin/logs HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 13:32:50] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 479-978-836
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:29:31] "GET /admin/logs HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:29:31] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:29:31] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:29:33] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:29:33] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:29:33] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:29:34] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:30:44] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:30:44] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:31:00] "[32mPOST /admin/users HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:31:00] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:31:00] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:32:06] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:36:52] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:36:52] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in 'd:\\HACATON_ADMIN\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 479-978-836
+INFO:werkzeug: * Detected change in 'd:\\HACATON_ADMIN\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 479-978-836
+INFO:werkzeug: * Detected change in 'd:\\HACATON_ADMIN\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 479-978-836
+INFO:werkzeug: * Detected change in 'd:\\HACATON_ADMIN\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 479-978-836
+INFO:werkzeug: * Detected change in 'd:\\HACATON_ADMIN\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 479-978-836
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 479-978-836
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:39:07] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:39:07] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:39:13] "[35m[1mPOST /approve_user/1 HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:39:13] "GET /approve_user/1?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:39:13] "GET /approve_user/1?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:39:14] "GET /approve_user/1?__debugger__=yes&cmd=resource&f=console.png&s=PNNcFMpORqkFH9wevzJ7 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:39:14] "GET /approve_user/1?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'd:\\HACATON_ADMIN\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 479-978-836
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 479-978-836
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:39:49] "[32mPOST /approve_user/1 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:39:49] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:39:49] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:39:51] "[32mPOST /approve_user/1 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:39:51] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:39:51] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:39:53] "[32mPOST /approve_user/1 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:39:53] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:39:53] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:39:54] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:39:54] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:39:54] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:39:54] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:39:54] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:39:54] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:39:54] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:39:54] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:39:55] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:39:55] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:39:55] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:39:55] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:39:55] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:39:55] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:39:55] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:39:55] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:39:55] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:39:55] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:39:56] "[32mPOST /approve_user/1 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:39:56] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:39:56] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:39:57] "[32mPOST /approve_user/1 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:39:57] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:39:57] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:39:57] "[32mPOST /approve_user/1 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:39:57] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:39:57] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:39:57] "[32mPOST /approve_user/1 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:39:57] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:39:57] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in 'd:\\HACATON_ADMIN\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 479-978-836
+INFO:werkzeug: * Detected change in 'd:\\HACATON_ADMIN\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 479-978-836
+INFO:werkzeug: * Detected change in 'd:\\HACATON_ADMIN\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 479-978-836
+INFO:werkzeug: * Detected change in 'd:\\HACATON_ADMIN\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 479-978-836
+INFO:werkzeug: * Detected change in 'd:\\HACATON_ADMIN\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 479-978-836
+INFO:werkzeug: * Detected change in 'd:\\HACATON_ADMIN\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 479-978-836
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 479-978-836
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:43:58] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:43:58] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:43:59] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:43:59] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:44:00] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:44:00] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:44:00] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:44:00] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:44:02] "[32mPOST /approve_user/1 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:44:02] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:44:02] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:44:05] "GET /admin/admins HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:44:05] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:44:06] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:44:06] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:44:07] "GET /admin/admins HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:44:07] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:45:18] "GET /admin/admins HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:45:18] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:45:21] "GET /admin/logs HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:45:22] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:45:23] "GET /admin/control HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:45:23] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:45:23] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:45:23] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:45:23] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:45:25] "[32mGET /admin HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:45:25] "GET /login?next=/admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:45:25] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:45:29] "POST /login?next=/admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:56:18] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:56:19] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:56:24] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:56:24] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:56:26] "[32mGET /admin HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:56:26] "GET /login?next=/admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:56:26] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:56:27] "[32mGET /admin/users HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:56:27] "GET /login?next=/admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:56:27] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:56:27] "[32mGET /admin/admins HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:56:27] "GET /login?next=/admin/admins HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:56:27] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:56:28] "[32mGET /admin/logs HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:56:28] "GET /login?next=/admin/logs HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:56:28] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:56:28] "[32mGET /admin/control HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:56:28] "GET /login?next=/admin/control HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:56:29] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:56:29] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:56:29] "GET /login?next=/logout HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:56:29] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:56:44] "[32mPOST /login?next=/logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:56:44] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:56:44] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:56:46] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:56:46] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:56:47] "GET /admin/admins HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:56:47] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:56:48] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:56:48] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:56:49] "GET /admin/admins HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 15:56:49] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 16:00:43] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 16:00:43] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 16:00:44] "GET /admin/admins HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 16:00:44] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 16:00:46] "GET /admin/logs HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 16:00:46] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 16:00:48] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 16:00:48] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 16:00:49] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 16:00:49] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 16:01:47] "GET /admin/control HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 16:01:47] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:root:[2025-02-15 16:01:53.924629] Контроль данных: 12
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 16:01:53] "POST /admin/control HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 16:01:55] "GET /admin/control HTTP/1.1" 200 -
+INFO:root:[2025-02-15 16:01:56.426861] Контроль данных: 12123
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 16:01:56] "POST /admin/control HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 16:01:57] "GET /admin/control HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 16:01:58] "POST /admin/control HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 16:02:00] "GET /admin/control HTTP/1.1" 200 -
+INFO:root:[2025-02-15 16:02:03.141185] Контроль данных: 123
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 16:02:03] "POST /admin/control HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 16:02:11] "GET /admin/control HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 479-978-836
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:43:06] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:43:07] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:43:14] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:43:14] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:43:33] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:43:33] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:43:33] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:43:42] "GET /admin/admins HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:43:42] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:43:44] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:43:44] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:45:30] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:45:30] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:48:27] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:48:27] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:48:28] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:48:28] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:48:28] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:48:28] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:48:29] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:48:29] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:48:29] "GET /admin/admins HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:48:29] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:48:31] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:48:31] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:48:58] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:48:58] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:48:59] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:48:59] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:48:59] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:48:59] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:49:00] "GET /admin/admins HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:49:00] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:49:01] "GET /admin/logs HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:49:01] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:49:02] "GET /admin/control HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:49:02] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:49:03] "GET /admin/logs HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:49:03] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:49:04] "GET /admin/control HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:49:04] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:49:05] "GET /admin/admins HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:49:05] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:49:05] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:49:05] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:49:06] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:49:06] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:49:06] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:49:06] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:49:06] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:49:06] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:49:06] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:49:06] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:49:07] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:49:07] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 479-978-836
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:49:19] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:49:19] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:49:20] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:49:20] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:49:21] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:49:21] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:55:58] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:55:58] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:55:59] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:55:59] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:56:00] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:56:00] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:56:00] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:56:00] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:56:01] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:56:01] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:56:01] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:56:01] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:56:01] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:56:01] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:56:03] "GET /admin/admins HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:56:03] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:56:04] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:56:04] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:56:05] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:56:05] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:56:06] "GET /admin/admins HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:56:06] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:56:06] "GET /admin/logs HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:56:06] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:56:06] "GET /admin/logs HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:56:06] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:56:07] "GET /admin/control HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:56:07] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:56:07] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:56:07] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:56:07] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:56:08] "[32mGET /admin/logs HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:56:08] "GET /login?next=/admin/logs HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:56:08] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:56:08] "[32mGET /admin/users HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:56:08] "GET /login?next=/admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:56:08] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:56:08] "[32mGET /admin/users HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:56:08] "GET /login?next=/admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:56:08] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:56:09] "[32mGET /admin HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:56:09] "GET /login?next=/admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:56:09] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:56:09] "[32mGET /admin HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:56:09] "GET /login?next=/admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:56:09] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:56:09] "[32mGET /admin HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:56:09] "GET /login?next=/admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:56:10] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:56:10] "[32mGET /admin/users HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:56:10] "GET /login?next=/admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:56:10] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:56:10] "[32mGET /admin/admins HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:56:10] "GET /login?next=/admin/admins HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:56:10] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:56:10] "[32mGET /admin/admins HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:56:10] "GET /login?next=/admin/admins HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:56:11] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:56:11] "[32mGET /admin/control HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:56:11] "GET /login?next=/admin/control HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:56:11] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:56:12] "[32mGET /admin/admins HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:56:12] "GET /login?next=/admin/admins HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:56:12] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:56:38] "GET /login?next=/admin/admins HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:56:38] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:56:44] "[32mPOST /login?next=/admin/admins HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:56:44] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:56:44] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:56:46] "GET /admin/admins HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 20:56:46] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in 'd:\\HACATON_ADMIN\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 479-978-836
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 479-978-836
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:02:04] "GET /admin/admins HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:02:05] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:02:05] "[35m[1mGET /admin HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:02:06] "GET /admin?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:02:06] "GET /admin?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:02:06] "GET /admin?__debugger__=yes&cmd=resource&f=console.png&s=DGJ2cmb00X0QAJLLy3eI HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:02:06] "GET /admin?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'd:\\HACATON_ADMIN\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 479-978-836
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 479-978-836
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:03:35] "GET /login?next=/admin/admins HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:03:35] "GET /login?next=/admin/control HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:03:37] "[35m[1mGET /admin HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:03:38] "[36mGET /admin?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:03:38] "[36mGET /admin?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:03:38] "GET /admin?__debugger__=yes&cmd=resource&f=console.png&s=uQwKfgEhW7g4t6vTrn8G HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'd:\\HACATON_ADMIN\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 479-978-836
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:03:54] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:03:54] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:03:55] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:03:55] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:03:56] "GET /admin/admins HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:03:56] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:03:56] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:03:56] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:03:57] "GET /admin/admins HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:03:57] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:03:57] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:03:57] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:03:57] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:03:57] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:09:18] "GET /admin/admins HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:09:18] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:09:19] "GET /admin/logs HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:09:19] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:09:21] "GET /admin/control HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:09:21] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:09:21] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:09:21] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:11:09] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:11:09] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:11:24] "GET /admin/control HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:11:24] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:11:25] "GET /admin/control HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:11:25] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:11:25] "GET /admin/control HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:11:25] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in 'd:\\HACATON_ADMIN\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 479-978-836
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:16:32] "GET /admin/control HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:16:32] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:16:33] "[35m[1mGET /admin/participants HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:16:33] "GET /admin/participants?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:16:33] "GET /admin/participants?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:16:33] "GET /admin/participants?__debugger__=yes&cmd=resource&f=console.png&s=mfArYRKuVpKIP2oH5gJl HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:16:33] "GET /admin/participants?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:16:48] "[35m[1mGET /admin/participants HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:16:48] "[36mGET /admin/participants?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:16:48] "[36mGET /admin/participants?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:16:49] "[36mGET /admin/participants?__debugger__=yes&cmd=resource&f=console.png&s=mfArYRKuVpKIP2oH5gJl HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:16:49] "[36mGET /admin/participants?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:16:55] "[35m[1mGET /admin/conflicts HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:16:55] "GET /admin/conflicts?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:16:55] "GET /admin/conflicts?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:16:55] "GET /admin/conflicts?__debugger__=yes&cmd=resource&f=console.png&s=mfArYRKuVpKIP2oH5gJl HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:16:55] "GET /admin/conflicts?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:16:57] "[35m[1mGET /admin/participants HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:16:57] "[36mGET /admin/participants?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:16:57] "[36mGET /admin/participants?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:16:57] "[36mGET /admin/participants?__debugger__=yes&cmd=resource&f=console.png&s=mfArYRKuVpKIP2oH5gJl HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:16:59] "[35m[1mGET /admin/municipalities HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:16:59] "GET /admin/municipalities?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:16:59] "GET /admin/municipalities?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:16:59] "GET /admin/municipalities?__debugger__=yes&cmd=resource&f=console.png&s=mfArYRKuVpKIP2oH5gJl HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:16:59] "GET /admin/municipalities?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:17:02] "[35m[1mGET /admin/participants HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:17:02] "[36mGET /admin/participants?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:17:02] "[36mGET /admin/participants?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:17:02] "[36mGET /admin/participants?__debugger__=yes&cmd=resource&f=console.png&s=mfArYRKuVpKIP2oH5gJl HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:17:33] "[35m[1mGET /admin/participants HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:17:33] "[36mGET /admin/participants?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:17:33] "[36mGET /admin/participants?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:17:33] "[36mGET /admin/participants?__debugger__=yes&cmd=resource&f=console.png&s=mfArYRKuVpKIP2oH5gJl HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:17:33] "[36mGET /admin/participants?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:17:52] "GET /admin/participants HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:17:52] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:18:18] "GET /admin/participants HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:18:18] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:18:19] "GET /admin/participants HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:18:19] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:18:19] "GET /admin/conflicts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:18:19] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:18:20] "GET /admin/municipalities HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:18:20] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:18:32] "GET /admin/conflicts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:18:32] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:18:33] "GET /admin/participants HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:18:33] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:18:34] "GET /admin/municipalities HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:18:34] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 479-978-836
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:23:45] "GET /admin/admins HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:23:45] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:23:50] "GET /admin/admins HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:23:50] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:23:51] "GET /admin/logs HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:23:51] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:23:52] "GET /admin/admins HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:23:52] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:26:56] "GET /admin/conflicts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:26:56] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:26:57] "GET /admin/participants HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:26:57] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:26:58] "GET /admin/municipalities HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:26:58] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:26:58] "GET /admin/participants HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:26:58] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:26:59] "GET /admin/conflicts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:26:59] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 479-978-836
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:45:27] "GET /admin/conflicts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:45:27] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:45:29] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:45:29] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:45:35] "GET /admin/municipalities HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:45:35] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:45:38] "GET /admin/participants HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:45:38] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:45:39] "GET /admin/conflicts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:45:39] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:45:49] "GET /admin/conflicts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:45:49] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:45:50] "GET /admin/participants HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:45:50] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:45:50] "GET /admin/municipalities HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:45:50] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:45:51] "GET /admin/participants HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:45:51] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:45:51] "GET /admin/municipalities HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:45:51] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:45:51] "GET /admin/conflicts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:45:51] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:45:52] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:45:52] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:45:52] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:45:53] "[32mGET /admin/admins HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:45:53] "GET /login?next=/admin/admins HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:45:53] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:45:54] "[32mGET /admin/logs HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:45:54] "GET /login?next=/admin/logs HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:45:54] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:45:54] "[32mGET /admin/admins HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:45:54] "GET /login?next=/admin/admins HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:45:54] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:46:03] "[32mPOST /login?next=/admin/admins HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:46:03] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:46:03] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:46:07] "GET /admin/conflicts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:46:07] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:46:08] "GET /admin/admins HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:46:08] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:46:16] "GET /admin/conflicts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2025 21:46:16] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in 'd:\\HACATON_ADMIN\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 479-978-836
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 01:53:32] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 01:53:34] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 01:53:34] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 01:53:48] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 01:53:48] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 01:53:48] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 01:53:51] "GET /admin/admins HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 01:53:51] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 01:53:53] "GET /admin/logs HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 01:53:53] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 01:53:54] "GET /admin/control HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 01:53:54] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 01:53:54] "GET /admin/municipalities HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 01:53:54] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 01:53:55] "GET /admin/participants HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 01:53:55] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 01:56:36] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 01:56:36] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 01:56:37] "GET /admin/admins HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 01:56:37] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 01:57:00] "[32mPOST /admin/admins HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 01:57:00] "GET /admin/admins HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 01:57:00] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:08:41] "GET /admin/admins HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:08:41] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:08:43] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:08:43] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 479-978-836
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:17:00] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:17:04] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:17:08] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:17:08] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:17:14] "GET /admin/participants HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:17:14] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in 'd:\\HACATON_ADMIN\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 479-978-836
+INFO:werkzeug: * Detected change in 'd:\\HACATON_ADMIN\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 479-978-836
+INFO:werkzeug: * Detected change in 'd:\\HACATON_ADMIN\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 479-978-836
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 479-978-836
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:21:59] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:21:59] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:22:01] "[35m[1mGET /admin/municipalities HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:22:01] "GET /admin/municipalities?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:22:01] "GET /admin/municipalities?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:22:01] "GET /admin/municipalities?__debugger__=yes&cmd=resource&f=console.png&s=w2s9Kzu9KjbJOjTEtnjv HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:22:01] "GET /admin/municipalities?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'd:\\HACATON_ADMIN\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 479-978-836
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 479-978-836
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:22:27] "GET /admin/municipalities HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:22:27] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:22:29] "GET /admin/municipalities/add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:22:29] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:22:33] "[32mPOST /admin/municipalities/add HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:22:33] "GET /admin/municipalities HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:22:33] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:22:37] "GET /admin/municipalities/add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:22:37] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:22:40] "[32mPOST /admin/municipalities/add HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:22:40] "GET /admin/municipalities HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:22:40] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:22:41] "GET /admin/municipalities/edit/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:22:41] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:22:42] "[32mPOST /admin/municipalities/edit/2 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:22:42] "GET /admin/municipalities HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:22:42] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:22:44] "[32mPOST /admin/municipalities/delete/2 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:22:44] "GET /admin/municipalities HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:22:44] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:22:46] "[32mPOST /admin/municipalities/delete/1 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:22:46] "GET /admin/municipalities HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:22:46] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:22:52] "GET /admin/municipalities/add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:22:52] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:22:54] "[32mPOST /admin/municipalities/add HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:22:54] "GET /admin/municipalities HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:22:54] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in 'd:\\HACATON_ADMIN\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 479-978-836
+INFO:werkzeug: * Detected change in 'd:\\HACATON_ADMIN\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 479-978-836
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:30:20] "GET /admin/participants HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:30:20] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:30:21] "GET /admin/participants/add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:30:21] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:30:28] "[32mPOST /admin/participants/add HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:30:28] "GET /admin/participants HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:30:28] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:30:34] "GET /admin/conflicts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:30:34] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:30:35] "GET /admin/conflicts/add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:30:35] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:30:40] "[32mPOST /admin/conflicts/add HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:30:40] "GET /admin/conflicts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:30:40] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:30:43] "GET /admin/conflicts/edit/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:30:43] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:30:44] "[32mPOST /admin/conflicts/edit/1 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:30:44] "GET /admin/conflicts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:30:44] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:31:17] "GET /admin/participants HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:31:18] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:31:36] "GET /admin/municipalities HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:31:36] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:31:43] "GET /admin/logs HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:31:43] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:31:51] "GET /admin/municipalities HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:31:51] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:31:54] "GET /admin/participants HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:31:54] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:31:55] "GET /admin/conflicts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:31:55] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:31:55] "GET /admin/participants HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:31:55] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:31:56] "GET /admin/participants HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:31:56] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:40:10] "GET /admin/conflicts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:40:10] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:40:12] "GET /admin/municipalities HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:40:12] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:40:19] "GET /admin/conflicts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:40:19] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:40:36] "GET /admin/control HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:40:36] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:40:36] "GET /admin/logs HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:40:37] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:40:37] "GET /admin/admins HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:40:37] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:40:38] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:40:38] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:40:39] "GET /admin/conflicts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:40:39] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:40:40] "GET /admin/conflicts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:40:40] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:40:40] "GET /admin/participants HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:40:40] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:40:40] "GET /admin/municipalities HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:40:40] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:40:41] "GET /admin/participants HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:40:41] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:40:41] "GET /admin/conflicts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:40:41] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:40:42] "GET /admin/conflicts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:40:42] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:41:15] "GET /admin/participants HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:41:15] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:43:24] "GET /admin/conflicts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:43:24] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:43:51] "GET /admin/participants HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:43:51] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:44:19] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:44:19] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:44:20] "GET /admin/admins HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:44:20] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:44:21] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:44:21] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:44:27] "GET /admin/control HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:44:27] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:44:27] "GET /admin/logs HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:44:27] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:44:34] "GET /admin/admins HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 02:44:34] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:11:46] "GET /admin/participants HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:11:46] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:11:51] "GET /admin/conflicts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:11:51] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in 'd:\\HACATON_ADMIN\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 479-978-836
+INFO:werkzeug: * Detected change in 'd:\\HACATON_ADMIN\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 479-978-836
+INFO:werkzeug: * Detected change in 'd:\\HACATON_ADMIN\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 479-978-836
+INFO:werkzeug: * Detected change in 'd:\\HACATON_ADMIN\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 479-978-836
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 479-978-836
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:17:04] "GET /admin/conflicts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:17:05] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 479-978-836
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:17:20] "[32mGET /admin/conflicts HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:17:20] "GET /login?next=/admin/conflicts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:17:20] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:17:31] "[32mPOST /login?next=/admin/conflicts HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:17:31] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:17:31] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:17:33] "GET /admin/admins HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:17:33] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:17:36] "GET /admin/participants HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:17:36] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:17:37] "GET /admin/municipalities HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:17:37] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:17:38] "GET /admin/conflicts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:17:38] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:17:39] "GET /admin/conflicts/add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:17:39] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:17:53] "[32mPOST /admin/conflicts/add HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:17:53] "GET /admin/conflicts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:17:53] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:18:21] "GET /admin/participants HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:18:21] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:18:21] "GET /admin/participants/add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:18:22] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:18:33] "[32mPOST /admin/participants/add HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:18:33] "GET /admin/participants HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:18:33] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:18:42] "GET /admin/participants/add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:18:42] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:18:47] "GET /admin/participants HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:18:47] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:18:49] "[32mPOST /admin/participants/delete/1 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:18:49] "GET /admin/participants HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:18:49] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:18:51] "GET /admin/conflicts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:18:51] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:23:08] "GET /admin/conflicts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:23:08] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:23:10] "GET /admin/participants HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:23:10] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:23:10] "GET /admin/participants HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:23:11] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:23:12] "GET /admin/participants/add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:23:12] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:23:16] "[32mPOST /admin/participants/add HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:23:16] "GET /admin/participants HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:23:17] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:23:23] "GET /admin/participants/edit/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:23:23] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:23:25] "[32mPOST /admin/participants/edit/1 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:23:25] "GET /admin/participants HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:23:25] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in 'd:\\HACATON_ADMIN\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 479-978-836
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 479-978-836
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:24:29] "GET /admin/participants HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:24:29] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:24:30] "GET /admin/participants HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:24:30] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:24:30] "GET /admin/participants HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:24:30] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:24:31] "GET /admin/participants HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:24:31] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:24:31] "GET /admin/participants HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:24:31] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:24:33] "[32mPOST /admin/participants/delete/1 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:24:33] "GET /admin/participants HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:24:33] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:24:33] "GET /admin/participants/add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:24:33] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:24:38] "[32mPOST /admin/participants/add HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:24:38] "GET /admin/participants HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:24:38] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:24:45] "GET /admin/conflicts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:24:45] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:25:53] "GET /admin/conflicts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:25:53] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:25:55] "GET /admin/conflicts/edit/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:25:55] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:25:57] "[32mPOST /admin/conflicts/edit/1 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:25:57] "GET /admin/conflicts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:25:57] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:26:10] "GET /admin/conflicts/edit/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:26:10] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:26:12] "[32mPOST /admin/conflicts/edit/1 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:26:12] "GET /admin/conflicts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:26:12] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:26:42] "GET /admin/participants HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:26:42] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:26:43] "GET /admin/municipalities HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:26:43] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:26:45] "GET /admin/municipalities/add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:26:45] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:26:50] "[32mPOST /admin/municipalities/add HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:26:51] "GET /admin/municipalities HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:26:51] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:26:55] "GET /admin/conflicts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:26:55] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:26:56] "GET /admin/participants HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:26:56] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:26:56] "GET /admin/municipalities HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:26:56] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:26:57] "GET /admin/participants HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:26:57] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:26:57] "GET /admin/conflicts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:26:57] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:26:59] "GET /admin/municipalities HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:26:59] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:26:59] "GET /admin/admins HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:26:59] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:27:01] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:27:01] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:27:01] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:27:01] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:27:02] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:27:02] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:27:03] "GET /admin/admins HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:27:03] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:27:03] "GET /admin/participants HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:27:03] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:27:04] "GET /admin/conflicts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:27:04] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:27:09] "GET /admin/participants HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:27:09] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:28:42] "GET /admin/participants HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:28:43] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:28:45] "GET /admin/participants/edit/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:28:45] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:28:47] "[32mPOST /admin/participants/edit/1 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:28:47] "GET /admin/participants HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:28:47] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:28:50] "GET /admin/participants HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:28:50] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:28:51] "GET /admin/participants/edit/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:28:51] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:28:54] "[32mPOST /admin/participants/edit/1 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:28:54] "GET /admin/participants HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:28:54] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:28:55] "GET /admin/participants/edit/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:28:55] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:28:59] "[32mPOST /admin/participants/edit/1 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:28:59] "GET /admin/participants HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:28:59] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:29:02] "[32mPOST /admin/participants/edit/1 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:29:02] "GET /admin/participants HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:29:02] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:29:05] "[32mPOST /admin/participants/delete/1 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:29:05] "GET /admin/participants HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:29:05] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:29:06] "GET /admin/participants/add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:29:06] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:29:11] "[32mPOST /admin/participants/add HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:29:11] "GET /admin/participants HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:29:11] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:29:12] "GET /admin/participants/edit/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:29:12] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:29:15] "[32mPOST /admin/participants/edit/1 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:29:15] "GET /admin/participants HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:29:15] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:29:17] "GET /admin/participants/edit/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:29:17] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:29:20] "[32mPOST /admin/participants/edit/1 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:29:20] "GET /admin/participants HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:29:20] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:29:33] "GET /admin/participants/add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:29:33] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:29:38] "[32mPOST /admin/participants/add HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:29:38] "GET /admin/participants HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:29:38] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:29:47] "[32mPOST /admin/participants/delete/2 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:29:47] "GET /admin/participants HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:29:47] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:29:48] "[32mPOST /admin/participants/delete/1 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:29:49] "GET /admin/participants HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:29:49] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:29:50] "GET /admin/conflicts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:29:50] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:29:52] "GET /admin/participants HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:29:52] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:30:00] "GET /admin/municipalities HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:30:00] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:30:01] "GET /admin/control HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:30:01] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:30:02] "GET /admin/logs HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:30:02] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:30:09] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:30:09] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:30:11] "GET /admin/admins HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:30:11] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:30:12] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:30:12] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:30:16] "GET /admin/admins HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:30:16] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:30:18] "GET /admin/conflicts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:30:18] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:30:19] "GET /admin/participants HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:30:19] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
