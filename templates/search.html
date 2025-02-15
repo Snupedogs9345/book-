@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поиск человека</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 50px;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: auto;
+            position: relative;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .suggestions {
+            position: absolute;
+            width: 100%;
+            background: white;
+            border: 1px solid #ccc;
+            border-top: none;
+            max-height: 150px;
+            overflow-y: auto;
+            display: none;
+            z-index: 10;
+            text-align: left;
+        }
+        .suggestions div {
+            padding: 10px;
+            cursor: pointer;
+        }
+        .suggestions div:hover {
+            background-color: #f0f0f0;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const input = document.getElementById("search-input");
+            const suggestions = document.getElementById("suggestions");
+
+            input.addEventListener("input", function() {
+                const query = input.value.trim();
+                if (query.length < 2) {
+                    suggestions.style.display = "none";
+                    return;
+                }
+
+                fetch(`/autocomplete?query=${query}`)
+                    .then(response => response.json())
+                    .then(data => {
+                        suggestions.innerHTML = "";
+                        if (data.length === 0) {
+                            suggestions.style.display = "none";
+                            return;
+                        }
+
+                        data.forEach(person => {
+                            const div = document.createElement("div");
+                            div.textContent = person.fio;
+                            div.addEventListener("click", function() {
+                                input.value = person.fio;
+                                suggestions.style.display = "none";
+                            });
+                            suggestions.appendChild(div);
+                        });
+
+                        suggestions.style.display = "block";
+                    })
+                    .catch(error => console.error("Ошибка получения данных:", error));
+            });
+
+            document.addEventListener("click", function(e) {
+                if (!suggestions.contains(e.target) && e.target !== input) {
+                    suggestions.style.display = "none";
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h2>Поиск человека</h2>
+        <form action="/search" method="GET">
+            <input type="text" id="search-input" name="query" placeholder="Введите имя" required>
+            <div id="suggestions" class="suggestions"></div>
+            <button type="submit">Поиск</button>
+        </form>
+
+        {% if results %}
+            <h2>Результаты поиска:</h2>
+            <ul>
+                {% for person in results %}
+                    <li><a href="{{ url_for('soldat', id=person.id) }}">{{ person.fio }}</a></li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </div>
+</body>
+</html>
