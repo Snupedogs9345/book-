@@ -9,9 +9,12 @@
         <tr>
             <th>ID</th>
             <th>ФИО</th>
+            <th>Годы жизни</th>  <!-- Новая колонка -->
+            <th>Наименование района</th>  <!-- Новая колонка -->
             <th>Описание</th>
             <th>Конфликты</th>
             <th>Контакты</th>
+            <th>Награды</th>  <!-- Новая колонка -->
             <th>Статус</th>
             <th>Действия</th>
         </tr>
@@ -21,6 +24,8 @@
         <tr>
             <td>{{ participant.id }}</td>
             <td>{{ participant.full_name }}</td>
+            <td>{{ participant.years_of_life|default('', true) }}</td>  <!-- Годы жизни -->
+            <td>{{ participant.district_name|default('', true) }}</td>  <!-- Наименование района -->
             <td>{{ participant.description|default('', true) }}</td>
             <td>
                 {% if participant.conflicts %}
@@ -34,6 +39,7 @@
                 {% endif %}
             </td>
             <td>{{ participant.contact }}</td>
+            <td>{{ participant.awards|default('', true) }}</td>  <!-- Награды -->
             <td>
                 {% if participant.status == 'Погиб' %}
                     <span class="badge bg-danger">Погиб</span>
@@ -56,7 +62,7 @@
         </tr>
         {% else %}
         <tr>
-            <td colspan="7">Нет записей</td>
+            <td colspan="10">Нет записей</td>
         </tr>
         {% endfor %}
     </tbody>

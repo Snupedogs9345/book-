@@ -21,6 +21,18 @@
         <input type="text" class="form-control" id="contact" name="contact" 
                value="{{ participant.contact }}" required>
     </div>
+    <div class="form-group">
+        <label for="years_of_life">Годы жизни</label>
+        <input type="text" class="form-control" id="years_of_life" name="years_of_life" value="{{ participant.years_of_life }}">
+    </div>
+    <div class="form-group">
+        <label for="district_name">Наименование района</label>
+        <input type="text" class="form-control" id="district_name" name="district_name" value="{{ participant.district_name }}">
+    </div>
+    <div class="form-group">
+        <label for="awards">Награды</label>
+        <textarea class="form-control" id="awards" name="awards">{{ participant.awards }}</textarea>
+    </div>
     
     <div class="form-group">
         <label for="status">Статус:</label>
