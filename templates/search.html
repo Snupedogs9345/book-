@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поиск человека</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #f4f4f4, #e0e0e0);
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin: 50px auto;
+            position: relative; /* Для позиционирования выпадающего меню */
+        }
+        h2 {
+            font-size: 24px;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        input {
+            width: 80%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+        .suggestions {
+            position: absolute;
+            width: 80%;
+            background: white;
+            border: 1px solid #ccc;
+            border-top: none;
+            max-height: 150px;
+            overflow-y: auto;
+            display: none;
+            z-index: 10;
+            text-align: left;
+            top: calc(100% + 5px);
+            left: 50%;
+            transform: translateX(-50%);
+            box-sizing: border-box;
+            border-radius: 0 0 8px 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: opacity 0.3s ease;
+        }
+        .suggestions div {
+            padding: 10px;
+            cursor: pointer;
+        }
+        .suggestions div:hover {
+            background-color: #f0f0f0;
+        }
+        button {
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #6A11CB, #2575FC);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+        button:hover {
+            background: linear-gradient(135deg, #2575FC, #6A11CB);
+        }
+        button:active {
+            transform: scale(0.95);
+        }
+        a{
+            color: #000000;
+            text-decoration: none !important;
+            border: none !important;
+            }
+
+        .results {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .person-card {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .person-card img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+                max-width: 90%;
+            }
+            input {
+                width: 90%;
+            }
+            button {
+                width: 100%;
+            }
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const input = document.getElementById("search-input");
+            const suggestions = document.getElementById("suggestions");
+
+            input.addEventListener("input", function() {
+                const query = input.value.trim();
+                if (query.length < 2) {
+                    suggestions.style.display = "none";
+                    return;
+                }
+
+                fetch(`/autocomplete?query=${query}`)
+                    .then(response => response.json())
+                    .then(data => {
+                        suggestions.innerHTML = "";
+                        if (data.length === 0) {
+                            suggestions.style.display = "none";
+                            return;
+                        }
+
+                        // Ограничение количества предложений до 5
+                        data.slice(0, 5).forEach(person => {
+                            const div = document.createElement("div");
+                            div.textContent = person.fio;
+                            div.addEventListener("click", function() {
+                                input.value = person.fio;
+                                suggestions.style.display = "none";
+                            });
+                            suggestions.appendChild(div);
+                        });
+
+                        suggestions.style.display = "block";
+                    })
+                    .catch(error => console.error("Ошибка получения данных:", error));
+            });
+
+            document.addEventListener("click", function(e) {
+                if (!suggestions.contains(e.target) && e.target !== input) {
+                    suggestions.style.display = "none";
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h2>Поиск человека</h2>
+        <form action="/search" method="GET">
+            <input type="text" id="search-input" name="query" placeholder="Введите имя или фамилию..." required autocomplete="off" autocorrect="off" spellcheck="false">
+            <div id="suggestions" class="suggestions"></div>
+            <button type="submit"><i class="fas fa-search"></i> Поиск</button>
+        </form>
+
+                {% if results %}
+                    <h2>Результаты поиска:</h2>
+                    <div class="results">
+                        {% for person in results %}
+                            <div class="person-card">
+                                <!-- <img src="{{ person.image_url or 'https://via.placeholder.com/80' }}" alt="{{ person.fio }}"> -->
+                                <a href="{{ url_for('soldat', id=person.id) }}">
+                                    {{ person.fio }} 
+                                    <br>
+                                    <small>({{ person.years if person.years else 'Информация отсутствует' }})</small>
+                                </a>
+                            </div>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+    </div>
+</body>
+</html>
