@@ -70,6 +70,7 @@ class AuthorizedUser(db.Model):
     login = db.Column(db.String(50), unique=True, nullable=False)
     password_hash = db.Column(db.String(100), nullable=False)
     is_approved = db.Column(db.Boolean, default=False)
+    is_reject = db.Column(db.Boolean, default=False)
     admin_id = db.Column(db.Integer, db.ForeignKey('admin.id'))
 
     def set_password(self, password):
@@ -94,7 +95,7 @@ class Participant(db.Model):
     description = db.Column(db.Text)
     contact = db.Column(db.String(100), nullable=False)
     registration_date = db.Column(db.DateTime, default=datetime.utcnow)
-    status = db.Column(db.String(20), default='Активен')
+    status = db.Column(db.String(20), default='Здоров')
     conflicts = db.relationship('Conflict', secondary=participant_conflict, 
                               backref=db.backref('participants', lazy='dynamic'))
 
@@ -224,6 +225,19 @@ def manage_admins():
     admins = User.query.filter_by(is_admin=True).all()
     return render_template('admin/admins.html', admins=admins)
 
+@app.route('/delete_admin/<int:admin_id>', methods=['POST'])
+@login_required
+@admin_required
+def delete_admin(admin_id):
+    admin = User.query.get_or_404(admin_id)
+    if not admin.is_admin:
+        abort(400, "Этот пользователь не является администратором")
+    
+    db.session.delete(admin)
+    db.session.commit()
+    log_admin_action("Admin deleted", "User", admin.id)
+    return redirect(url_for('manage_admins'))
+
 @app.route('/admin/entries', methods=['GET', 'POST'])
 @login_required
 @admin_required
@@ -254,6 +268,28 @@ def approve_user(user_id):
     user.is_approved = True
     db.session.commit()
     log_admin_action("User approved", "AuthorizedUser", user.id)
+    return redirect(url_for('manage_users'))
+
+
+@app.route('/reject_user/<int:user_id>', methods=['POST'])
+@login_required
+@admin_required
+def reject_user(user_id):
+    user = AuthorizedUser.query.get_or_404(user_id)
+    user.is_approved = False  # Снимаем подтверждение
+    user.is_reject = True     # Устанавливаем статус "Отклонен"
+    db.session.commit()
+    log_admin_action("User rejected", "AuthorizedUser", user.id)
+    return redirect(url_for('manage_users'))
+
+@app.route('/delete_user/<int:user_id>', methods=['POST'])
+@login_required
+@admin_required
+def delete_user(user_id):
+    user = AuthorizedUser.query.get_or_404(user_id)
+    db.session.delete(user)
+    db.session.commit()
+    log_admin_action("User deleted", "AuthorizedUser", user.id)
     return redirect(url_for('manage_users'))
 
 @app.route('/admin/municipalities')
@@ -326,7 +362,7 @@ def add_participant():
                 full_name=request.form['full_name'],
                 description=request.form['description'],
                 contact=request.form['contact'],
-                status=request.form['status']
+                status=request.form['status']  # Новый статус
             )
             conflict_ids = request.form.getlist('conflicts')
             selected_conflicts = Conflict.query.filter(Conflict.id.in_(conflict_ids)).all()
@@ -349,7 +385,10 @@ def edit_participant(id):
     all_conflicts = Conflict.query.all()
     
     if request.method == 'POST':
+        participant.full_name = request.form['full_name']
         participant.description = request.form['description']
+        participant.contact = request.form['contact']
+        participant.status = request.form['status']  # Новый статус
         conflict_ids = request.form.getlist('conflicts')
         selected_conflicts = Conflict.query.filter(Conflict.id.in_(conflict_ids)).all()
         participant.conflicts = selected_conflicts

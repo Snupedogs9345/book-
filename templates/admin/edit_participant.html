@@ -24,9 +24,11 @@
     
     <div class="form-group">
         <label for="status">Статус:</label>
-        <select class="form-control" id="status" name="status">
-            <option value="active" {% if participant.status == 'active' %}selected{% endif %}>Активный</option>
-            <option value="inactive" {% if participant.status == 'inactive' %}selected{% endif %}>Неактивный</option>
+        <select class="form-control" id="status" name="status" required>
+            <option value="Здоров">Здоров</option>
+            <option value="Тяжело ранен (демобилизирован)">Тяжело ранен (демобилизирован)</option>
+            <option value="Пропал без вести">Пропал без вести</option>
+            <option value="Погиб">Погиб</option>
         </select>
     </div>
     

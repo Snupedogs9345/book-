@@ -29,7 +29,6 @@
         <button type="submit" class="btn btn-primary">Добавить</button>
     </form>
 
-    <!-- Таблица администраторов -->
     <table class="table table-bordered table-striped">
         <thead class="thead-dark">
             <tr>
@@ -37,6 +36,7 @@
                 <th>Должность</th>
                 <th>Телефон</th>
                 <th>Логин</th>
+                <th>Действия</th> <!-- Новая колонка -->
             </tr>
         </thead>
         <tbody>
@@ -46,6 +46,11 @@
                 <td>{{ admin.position }}</td>
                 <td>{{ admin.phone }}</td>
                 <td>{{ admin.username }}</td>
+                <td>
+                    <form action="{{ url_for('delete_admin', admin_id=admin.id) }}" method="POST" style="display: inline;">
+                        <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Вы уверены?')">Удалить</button>
+                    </form>
+                </td>
             </tr>
             {% endfor %}
         </tbody>

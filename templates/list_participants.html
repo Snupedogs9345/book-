@@ -25,7 +25,9 @@
             <td>
                 {% if participant.conflicts %}
                     {% for conflict in participant.conflicts %}
-                        <span class="badge bg-secondary text-white">{{ conflict.title }}</span>
+                        <span class="badge bg-{{ 'success' if conflict.status == 'closed' else 'danger' }}">
+                            {{ conflict.title }}
+                        </span>
                     {% endfor %}
                 {% else %}
                     <span class="text-muted">Не назначено</span>
@@ -33,9 +35,17 @@
             </td>
             <td>{{ participant.contact }}</td>
             <td>
-                <span class="badge bg-{{ 'success' if participant.status == 'active' else 'danger' }}">
-                    {{ 'Активный' if participant.status == 'active' else 'Неактивный' }}
-                </span>
+                {% if participant.status == 'Погиб' %}
+                    <span class="badge bg-danger">Погиб</span>
+                {% elif participant.status == 'Пропал без вести' %}
+                    <span class="badge bg-warning">Пропал без вести</span>
+                {% elif participant.status == 'Тяжело ранен (демобилизирован)' %}
+                    <span class="badge bg-info">Тяжело ранен (демобилизирован)</span>
+                {% elif participant.status == 'Здоров' %}
+                    <span class="badge bg-success">Здоров</span>
+                {% else %}
+                    <span class="badge bg-secondary">{{ participant.status }}</span>
+                {% endif %}
             </td>
             <td>
                 <a href="{{ url_for('edit_participant', id=participant.id) }}" class="btn btn-sm btn-warning">Редактировать</a>

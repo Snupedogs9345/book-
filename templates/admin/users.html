@@ -51,16 +51,24 @@
                 <td>
                     {% if user.is_approved %}
                         <span class="text-success">Подтвержден</span>
+                    {% elif user.is_reject %}
+                        <span class="text-danger">Отклонен</span>
                     {% else %}
                         <span class="text-warning">Ожидает подтверждения</span>
                     {% endif %}
                 </td>
                 <td>
-                    {% if not user.is_approved %}
+                    {% if not user.is_approved and not user.is_reject %}
                         <form action="{{ url_for('approve_user', user_id=user.id) }}" method="POST" style="display: inline;">
                             <button type="submit" class="btn btn-success btn-sm">Одобрить</button>
                         </form>
+                        <form action="{{ url_for('reject_user', user_id=user.id) }}" method="POST" style="display: inline;">
+                            <button type="submit" class="btn btn-warning btn-sm">Отклонить</button>
+                        </form>
                     {% endif %}
+                    <form action="{{ url_for('delete_user', user_id=user.id) }}" method="POST" style="display: inline;">
+                        <button type="submit" class="btn btn-danger btn-sm">Удалить</button>
+                    </form>
                 </td>
             </tr>
             {% endfor %}

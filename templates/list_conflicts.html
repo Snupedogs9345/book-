@@ -10,7 +10,7 @@
             <th>ID</th>
             <th>Название</th>
             <th>Описание</th>
-            <th>Статус</th>
+            <th>Боевые действия</th>
             <th>Дата создания</th>
             <th>Действия</th>
         </tr>
@@ -22,8 +22,8 @@
             <td>{{ conflict.title }}</td>
             <td class="text-truncate" style="max-width: 300px;">{{ conflict.description }}</td>
             <td>
-                <span class="badge bg-{{ 'success' if conflict.status == 'closed' else 'warning' }} text-white">
-                    {{ 'Закрыт' if conflict.status == 'closed' else 'Открыт' }}
+                <span class="badge bg-{{ 'success' if conflict.status == 'closed' else 'danger' }} text-white">
+                    {{ 'Завершены' if conflict.status == 'closed' else 'Ведуться' }}
                 </span>
             </td>
             <td>{{ conflict.created_at.strftime('%d.%m.%Y %H:%M') }}</td>
