@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Книга Памяти</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+  :root {
+    --text-container-left: 70%; /* Начальная позиция по горизонтали */
+    --text-container-top: 50%;  /* Начальная позиция по вертикали */
+  }
+    /* Стили для круглой иконки */
+    .round-icon {
+      border-radius: 50%; /* Делаем изображение круглым */
+      border: 2px solid white; /* Добавляем белую рамку */
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Добавляем тень */
+    }
+  
+    #map {
+    width: 800px;
+    height: 400px;
+    margin: 25px auto;
+    border: 4px solid #b99a71;
+    border-radius: 10px;
+  }
+
+  #map.show {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  body {
+    font-family: sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+    background: url('static/image/FRONT.png') no-repeat center center/cover;
+    transition: background-color 0.5s ease;
+  }
+
+  .section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+
+  .section.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .container {
+    width: 90vw;
+    background: url('static/image/zxc.png') no-repeat center center/cover;
+    padding: 30px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+  }
+
+  .top-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    width: 100%;
+  }
+
+  .image-container {
+    position: relative;
+    width: 450px;
+    height: 550px;
+    flex-shrink: 0;
+  }
+
+  .image-container img:first-child {
+    width: 70%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 16px;
+  }
+
+  .image-overlay {
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover; 
+  }
+
+  .text-container {
+    position: absolute;
+    left: var(--text-container-left);
+    top: var(--text-container-top);
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+  }
+
+  p {
+    word-break: break-word;
+  }
+
+  .map-section {
+    width: 90vw;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .map-container {
+    width: 100%;
+    height: 80vh;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+
+  .footer {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 50px;
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 20px;
+  }
+
+  .footer-links a {
+    color: grey;
+    text-decoration: none;
+  }
+
+  /* Футер */
+  footer {
+    background-color: #2a2a2a;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+  }
+
+  footer .footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  footer .footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 20px;
+  }
+
+  footer .footer-section h4 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #ff5a00;
+  }
+
+  footer .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  footer .footer-section ul li {
+    margin-bottom: 10px;
+  }
+
+  footer .footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  footer .footer-section ul li a:hover {
+    color: #ff5a00;
+  }
+
+  footer .social-links a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+  }
+
+  footer .social-links a:hover {
+    color: #ff5a00;
+  }
+
+  footer .footer-bottom {
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #ccc;
+  }
+</style>
+</head>
+
+<header>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #2b2a2a;
+      padding: 20px 30px;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-img {
+      height: 100px;
+      width: 200px;
+      margin-right: 15px;
+    }
+
+    .logo-text {
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      font-size: 18px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #FBC02D;
+      color: #212121;
+    }
+  </style>
+
+  <div class="logo-container">
+    <a href="/">
+      <img class="logo-img" src="/static/image/logo.png" alt="Логотип сайта">
+    </a>
+  </div>
+
+  <nav>
+    <a href="/">Главная</a>
+    <a href="search">Поиск</a>
+    <a href="/support">Контакты</a>
+    <a href="/login">Вход</a>
+  </nav>
+</header>
+
+<body>
+  {% if soldier %}
+  <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          document.getElementById('soldier-fio').innerHTML = "{{ soldier.fio }}";
+          document.getElementById('soldier-district').innerHTML  = "Наименование района: {{ soldier.n_raion }}";
+          document.getElementById('soldier-years').innerHTML  = "Годы жизни: {{ soldier.years }}";
+          document.getElementById('soldier-info').innerHTML  = "Краткая информация: {{ soldier.info }}";
+          document.getElementById('soldier-service').innerHTML  = "Место службы: {{ soldier.kontrakt }}";
+          document.getElementById('soldier-awards').innerHTML  = "Награды: {{ soldier.nagrads }}";
+      });
+  </script>
+  {% endif %}
+
+  <div class="section">
+    <div class="container">
+      <div class="top-section">
+        <div class="image-container">
+          {% if soldier_photo %}
+            <img class="image-overlay" src="{{ soldier_photo if soldier_photo else 'http://45.153.188.177:3002/images/no-image/no-image.jpg' }}" alt="Фото человека">
+          {% else %}
+          {% endif %}
+        </div>
+        <div class="text-container" id="text-container">
+          <h2 id="soldier-fio">{{ soldier.fio }}</h2>
+          <p id="soldier-district"><strong>Наименование района:</strong> {{ soldier.n_raion if soldier else 'Информация отсутствует' }}</p>
+          <p id="soldier-years"><strong>Годы жизни:</strong> {{ soldier.years if soldier else 'Информация отсутствует' }}</p>
+          <p id="soldier-info"><strong>Краткая информация:</strong> {{ soldier.info if soldier else 'Информация отсутствует' }}</p>
+          <p id="soldier-service"><strong>Место службы:</strong> {{ soldier.kontrakt if soldier else 'Информация отсутствует' }}</p>
+          <p id="soldier-awards"><strong>Награды:</strong> {{ soldier.nagrads if soldier else 'Информация отсутствует' }}</p>                
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Контейнер для карты -->
+  <div id="map"></div>
+
+  <script>
+      // Инициализация карты Leaflet
+      document.addEventListener("DOMContentLoaded", function() {
+          var map = L.map('map').setView([55.796127, 49.106414], 10); // Центр карты и масштаб
+
+          // Добавляем слой с картой (OpenStreetMap)
+          L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+              attribution: '© OpenStreetMap contributors'
+          }).addTo(map);
+
+          // Загрузка GeoJSON из файла
+          fetch('\\static\\9_2.json') // Укажите путь к вашему GeoJSON-файлу
+              .then(response => response.json())
+              .then(data => {
+                  // Добавляем GeoJSON-слой с границами
+                  L.geoJSON(data, {
+                      style: {
+                          color: "#ff7800", // Цвет границы
+                          weight: 2, // Толщина линии
+                          opacity: 1, // Прозрачность линии
+                          fillOpacity: 0.2 // Прозрачность заливки
+                      },
+                      onEachFeature: function(feature, layer) {
+                          // Добавляем подсказку с именем границы
+                          layer.bindTooltip(feature.properties.name);
+                      }
+                  }).addTo(map);
+              })
+              .catch(error => {
+                  console.error('Ошибка загрузки GeoJSON:', error);
+              });
+      });
+  </script>
+
+  <script>
+      // Функция для изменения позиции контейнера
+      function moveContainer(left, top) {
+          document.documentElement.style.setProperty('--text-container-left', left);
+          document.documentElement.style.setProperty('--text-container-top', top);
+      }
+
+      // Пример: сдвинуть контейнер на 100px вправо и 50px вниз
+      moveContainer('70%', '50%');
+  </script>
+
+<footer>
+  <div class="footer-content">
+      <div class="footer-section">
+          <h4>О нас</h4>
+          <ul>
+              <li><a href="#">История проекта</a></li>
+              <li><a href="#">Команда</a></li>
+              <li><a href="/support">Контакты</a></li>
+          </ul>
+      </div>
+      <div class="footer-section">
+          <h4>Полезные ссылки</h4>
+          <ul>
+              <li><a href="/search">Поиск героев</a></li>
+              <li><a href="#">Архив документов</a></li>
+              <li><a href="/support">Поддержка</a></li>
+          </ul>
+      </div>
+      <div class="footer-section">
+          <h4>Социальные сети</h4>
+          <div class="social-links">
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+      </div>
+  </div>
+  <div class="footer-bottom">
+      &copy; 2025 Книга Памяти. Все права защищены.
+  </div>
+</footer>
+
+<script>
+  function handleScroll() {
+    document.querySelectorAll('.section').forEach(section => {
+      const rect = section.getBoundingClientRect();
+      if (rect.top < window.innerHeight * 0.8 && rect.bottom > window.innerHeight * 0.2) {
+        section.classList.add('show');
+      } else {
+        section.classList.remove('show');
+      }
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', handleScroll);
+  window.addEventListener('scroll', handleScroll);
+</script>
+
+</body>
+</html>

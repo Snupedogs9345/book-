@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block title %}Карта{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-10">
+            <div class="card shadow">
+                <div class="card-body">
+                    <h1 class="display-4 mb-4 text-center">
+                        <i class="fas fa-map-marked-alt text-primary"></i> Интерактивная карта
+                    </h1>
+                    
+                    <div class="map-container rounded overflow-hidden">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://geois2.orb.ru/resource/8910/display?panel=layers" style="overflow:hidden;height:600px;width:800px" height="600" width="800"></iframe>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 text-center">
+                        <a href="{{ url_for('dashboard') }}" class="btn btn-primary">
+                            <i class="fas fa-arrow-left"></i> Назад в личный кабинет
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .map-container {
+        border: 1px solid #dee2e6;
+        border-radius: 0.375rem;
+        background-color: #f8f9fa;
+    }
+    iframe {
+        border: none;
+    }
+</style>
+{% endblock %}
