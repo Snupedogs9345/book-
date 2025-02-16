@@ -1370,3 +1370,90 @@ INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:30:18] "GET /admin/conflicts HTTP/1.
 INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:30:18] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
 INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:30:19] "GET /admin/participants HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 03:30:19] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 479-978-836
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 07:45:40] "GET /login?next=/admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 07:45:40] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 07:45:42] "[32mGET /admin HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 07:45:42] "GET /login?next=/admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 07:45:42] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 07:45:48] "POST /login?next=/admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 07:45:51] "GET /login?next=/admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 07:45:59] "[32mPOST /login?next=/admin HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 07:45:59] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 07:45:59] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 07:46:02] "GET /admin/logs HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2025 07:46:02] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in 'd:\\HACATON_ADMIN\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+2025-02-16 07:46:54 -  * Debugger is active!
+2025-02-16 07:46:54 -  * Debugger PIN: 479-978-836
+2025-02-16 07:47:24 -  * Detected change in 'd:\\HACATON_ADMIN\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+2025-02-16 07:47:25 -  * Debugger is active!
+2025-02-16 07:47:25 -  * Debugger PIN: 479-978-836
+2025-02-16 07:48:55 -  * Detected change in 'd:\\HACATON_ADMIN\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+2025-02-16 07:58:48 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-16 07:58:48 - [33mPress CTRL+C to quit[0m
+2025-02-16 07:58:48 -  * Restarting with stat
+2025-02-16 07:58:49 -  * Debugger is active!
+2025-02-16 07:58:49 -  * Debugger PIN: 479-978-836
+2025-02-16 07:59:02 - 127.0.0.1 - - [16/Feb/2025 07:59:02] "GET /admin/admins HTTP/1.1" 200 -
+2025-02-16 07:59:02 - 127.0.0.1 - - [16/Feb/2025 07:59:02] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+2025-02-16 07:59:11 - 127.0.0.1 - - [16/Feb/2025 07:59:11] "[32mPOST /admin/admins HTTP/1.1[0m" 302 -
+2025-02-16 07:59:11 - 127.0.0.1 - - [16/Feb/2025 07:59:11] "GET /admin/admins HTTP/1.1" 200 -
+2025-02-16 07:59:11 - 127.0.0.1 - - [16/Feb/2025 07:59:11] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+2025-02-16 07:59:14 - 127.0.0.1 - - [16/Feb/2025 07:59:14] "GET /admin/logs HTTP/1.1" 200 -
+2025-02-16 07:59:14 - 127.0.0.1 - - [16/Feb/2025 07:59:14] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+2025-02-16 08:01:58 - 127.0.0.1 - - [16/Feb/2025 08:01:58] "GET /admin/participants HTTP/1.1" 200 -
+2025-02-16 08:01:58 - 127.0.0.1 - - [16/Feb/2025 08:01:58] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+2025-02-16 08:02:00 - 127.0.0.1 - - [16/Feb/2025 08:02:00] "GET /admin/participants/add HTTP/1.1" 200 -
+2025-02-16 08:02:00 - 127.0.0.1 - - [16/Feb/2025 08:02:00] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+2025-02-16 08:02:04 - 127.0.0.1 - - [16/Feb/2025 08:02:04] "[32mPOST /admin/participants/add HTTP/1.1[0m" 302 -
+2025-02-16 08:02:04 - 127.0.0.1 - - [16/Feb/2025 08:02:04] "GET /admin/participants HTTP/1.1" 200 -
+2025-02-16 08:02:04 - 127.0.0.1 - - [16/Feb/2025 08:02:04] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+2025-02-16 08:03:34 -  * Detected change in 'd:\\HACATON_ADMIN\\app.py', reloading
+2025-02-16 08:03:34 -  * Restarting with stat
+2025-02-16 08:04:16 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-16 08:04:16 - [33mPress CTRL+C to quit[0m
+2025-02-16 08:04:16 -  * Restarting with stat
+2025-02-16 08:04:16 -  * Debugger is active!
+2025-02-16 08:04:16 -  * Debugger PIN: 479-978-836
+2025-02-16 08:09:25 -  * Detected change in 'd:\\HACATON_ADMIN\\app.py', reloading
+2025-02-16 08:09:25 -  * Restarting with stat
+2025-02-16 08:09:26 -  * Debugger is active!
+2025-02-16 08:09:26 -  * Debugger PIN: 479-978-836
+2025-02-16 08:14:01 -  * Detected change in 'd:\\HACATON_ADMIN\\app.py', reloading
+2025-02-16 08:14:01 -  * Restarting with stat
+2025-02-16 08:14:02 -  * Debugger is active!
+2025-02-16 08:14:02 -  * Debugger PIN: 479-978-836
+2025-02-16 08:14:10 -  * Detected change in 'd:\\HACATON_ADMIN\\app.py', reloading
+2025-02-16 08:14:10 -  * Restarting with stat
+2025-02-16 08:14:11 -  * Debugger is active!
+2025-02-16 08:14:11 -  * Debugger PIN: 479-978-836
+2025-02-16 08:14:13 -  * Detected change in 'd:\\HACATON_ADMIN\\app.py', reloading
+2025-02-16 08:14:13 -  * Restarting with stat
+2025-02-16 08:14:13 -  * Debugger is active!
+2025-02-16 08:14:13 -  * Debugger PIN: 479-978-836
+2025-02-16 08:14:15 -  * Detected change in 'd:\\HACATON_ADMIN\\app.py', reloading
+2025-02-16 08:14:16 -  * Restarting with stat
+2025-02-16 08:14:16 -  * Debugger is active!
+2025-02-16 08:14:16 -  * Debugger PIN: 479-978-836
+2025-02-16 08:14:19 -  * Detected change in 'd:\\HACATON_ADMIN\\app.py', reloading
+2025-02-16 08:14:19 -  * Restarting with stat
+2025-02-16 08:14:20 -  * Debugger is active!
+2025-02-16 08:14:20 -  * Debugger PIN: 479-978-836
+2025-02-16 08:14:23 -  * Detected change in 'd:\\HACATON_ADMIN\\app.py', reloading
+2025-02-16 08:14:23 -  * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 479-978-836
+INFO:werkzeug: * Detected change in 'd:\\HACATON_ADMIN\\app.py', reloading
+2025-02-16 08:18:58 -  * Restarting with stat
+2025-02-16 08:23:37 -  * Restarting with stat

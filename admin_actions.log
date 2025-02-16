@@ -1,0 +1,21 @@
+2025-02-16 07:45:15 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-16 07:45:15 - [33mPress CTRL+C to quit[0m
+2025-02-16 07:45:15 -  * Restarting with stat
+2025-02-16 07:45:15 -  * Debugger is active!
+2025-02-16 07:45:15 -  * Debugger PIN: 479-978-836
+2025-02-16 07:45:20 - 127.0.0.1 - - [16/Feb/2025 07:45:20] "[32mGET /admin/participants HTTP/1.1[0m" 302 -
+2025-02-16 07:45:20 - 127.0.0.1 - - [16/Feb/2025 07:45:20] "[35m[1mGET /login?next=/admin/participants HTTP/1.1[0m" 500 -
+2025-02-16 07:45:20 - 127.0.0.1 - - [16/Feb/2025 07:45:20] "GET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-02-16 07:45:20 - 127.0.0.1 - - [16/Feb/2025 07:45:20] "GET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-02-16 07:45:20 - 127.0.0.1 - - [16/Feb/2025 07:45:20] "GET /login?__debugger__=yes&cmd=resource&f=console.png&s=7cNA3xmaDQMnGyENNBuL HTTP/1.1" 200 -
+2025-02-16 07:45:20 - 127.0.0.1 - - [16/Feb/2025 07:45:20] "GET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-02-16 07:45:24 - 127.0.0.1 - - [16/Feb/2025 07:45:24] "[32mGET /admin/conflicts HTTP/1.1[0m" 302 -
+2025-02-16 07:45:24 - 127.0.0.1 - - [16/Feb/2025 07:45:24] "[35m[1mGET /login?next=/admin/conflicts HTTP/1.1[0m" 500 -
+2025-02-16 07:45:26 - 127.0.0.1 - - [16/Feb/2025 07:45:26] "[33mGET /admin/admins HTTP/1.1[0m" 404 -
+2025-02-16 07:45:27 - 127.0.0.1 - - [16/Feb/2025 07:45:27] "[32mGET /admin HTTP/1.1[0m" 302 -
+2025-02-16 07:45:27 - 127.0.0.1 - - [16/Feb/2025 07:45:27] "[35m[1mGET /login?next=/admin HTTP/1.1[0m" 500 -
+2025-02-16 07:45:31 -  * Detected change in 'd:\\HACATON_ADMIN\\app.py', reloading
+2025-02-16 07:45:31 -  * Restarting with stat
+2025-02-16 08:19:22 - AdminID: 1 | Action: Participant created | Target: Participant 2
+2025-02-16 08:26:14 - AdminID: 1 | Action: Admin created | Target: User 3
