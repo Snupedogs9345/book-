@@ -95,7 +95,10 @@ class Participant(db.Model):
     description = db.Column(db.Text)
     contact = db.Column(db.String(100), nullable=False)
     registration_date = db.Column(db.DateTime, default=datetime.utcnow)
-    status = db.Column(db.String(20), default='Здоров')
+    status = db.Column(db.String(50), default='Здоров')
+    years_of_life = db.Column(db.String(50))  # Годы жизни
+    district_name = db.Column(db.String(100))  # Наименование района
+    awards = db.Column(db.Text)  # Награды
     conflicts = db.relationship('Conflict', secondary=participant_conflict, 
                               backref=db.backref('participants', lazy='dynamic'))
 
@@ -229,13 +232,15 @@ def manage_admins():
 @login_required
 @admin_required
 def delete_admin(admin_id):
+    if current_user.id == admin_id:
+        abort(400, "Вы не можете удалить сами себя")
+    
     admin = User.query.get_or_404(admin_id)
     if not admin.is_admin:
         abort(400, "Этот пользователь не является администратором")
     
     db.session.delete(admin)
     db.session.commit()
-    log_admin_action("Admin deleted", "User", admin.id)
     return redirect(url_for('manage_admins'))
 
 @app.route('/admin/entries', methods=['GET', 'POST'])
@@ -354,15 +359,16 @@ def list_participants():
 @login_required
 @admin_required
 def add_participant():
-    all_conflicts = Conflict.query.all()
-    
     if request.method == 'POST':
         try:
             new_participant = Participant(
                 full_name=request.form['full_name'],
+                years_of_life=request.form['years_of_life'],  # Новое поле
+                district_name=request.form['district_name'],  # Новое поле
                 description=request.form['description'],
                 contact=request.form['contact'],
-                status=request.form['status']  # Новый статус
+                awards=request.form['awards'],  # Новое поле
+                status=request.form['status']
             )
             conflict_ids = request.form.getlist('conflicts')
             selected_conflicts = Conflict.query.filter(Conflict.id.in_(conflict_ids)).all()
@@ -375,6 +381,7 @@ def add_participant():
             log_admin_action(f"Participant creation failed: {str(e)}")
         return redirect(url_for('list_participants'))
     
+    all_conflicts = Conflict.query.all()
     return render_template('admin/add_participant.html', all_conflicts=all_conflicts)
 
 @app.route('/admin/participants/edit/<int:id>', methods=['GET', 'POST'])
@@ -386,9 +393,12 @@ def edit_participant(id):
     
     if request.method == 'POST':
         participant.full_name = request.form['full_name']
+        participant.years_of_life = request.form['years_of_life']  # Новое поле
+        participant.district_name = request.form['district_name']  # Новое поле
         participant.description = request.form['description']
         participant.contact = request.form['contact']
-        participant.status = request.form['status']  # Новый статус
+        participant.awards = request.form['awards']  # Новое поле
+        participant.status = request.form['status']
         conflict_ids = request.form.getlist('conflicts')
         selected_conflicts = Conflict.query.filter(Conflict.id.in_(conflict_ids)).all()
         participant.conflicts = selected_conflicts

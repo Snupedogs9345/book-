@@ -104,3 +104,6 @@
 2025-02-16 18:11:56 - AdminID: 1 | Action: Participant created | Target: Participant 3
 2025-02-16 18:12:02 - AdminID: 1 | Action: Participant updated | Target: Participant 3
 2025-02-16 19:15:25 - AdminID: 1 | Action: Login successful
+2025-02-16 19:28:29 - AdminID: 1 | Action: Participant created | Target: Participant 1
+2025-02-16 19:30:38 - AdminID: 1 | Action: Participant created | Target: Participant 1
+2025-02-16 19:30:41 - AdminID: 1 | Action: Participant updated | Target: Participant 1
